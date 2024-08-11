@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "文案助手",
+  "version": "1.0.0",
+  "description": "插件描述",
+  "author": "作者名",
+  "background": {
+    "service_worker": "scripts/serviceWorker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/contentScript.js"],
+      "all_frames": false,
+      "css": ["css/content.css"]
+    }
+  ],
+  "host_permissions": ["https://*/*"],
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "cookies",
+    "activeTab",
+    "scripting",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_title": "文案助手-你的贴身小帮手(Command+B/Ctrl+B快捷使用)",
+    "default_icon": {
+      "16": "images/icon16.gif",
+      "32": "images/icon32.gif",
+      "48": "images/icon48.gif",
+      "128": "images/icon128.gif"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+  "icons": {
+    "16": "images/icon16.gif",
+    "32": "images/icon32.gif",
+    "48": "images/icon48.gif",
+    "128": "images/icon128.gif"
+  }
+}

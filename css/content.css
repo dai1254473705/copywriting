@@ -1,0 +1,12 @@
+/**
+ * content style
+ */
+.svg-icon-popbtn{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.svg-icon-popbtn:hover{
+  opacity: 0.8;
+}
