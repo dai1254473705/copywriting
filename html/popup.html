@@ -11,12 +11,19 @@
 <body>
   <div id="applayout">
     <div class="title">
-      <img src="../images/icon48.gif" class="svg-icon-title">
-      <span>文案助手</span>
+      <div class="title-left">
+        <img src="../images/icon48.gif" class="svg-icon-title">
+        <span>文案助手</span>
+      </div>
+      <div class="title-right">
+        插件作者公众号：樱落雪
+        <img src="../images/wechat.png" class="svg-icon-wechat">
+        </img>
+      </div>
     </div>
     <div class="list-container">
       <ul id="li_template" class="list-group">
-        <li class="list-item">
+        <!-- <li class="list-item">
           <span class="top-tag">1</span>
           <div class="list-item-left">
             <span class="list-index">
@@ -30,7 +37,7 @@
             <span class="list-item-action delete" data-index="1" title="删除"><img class="svg-icon" src="../svg/shanchu.svg"><span class="icon-text hidden">删除</span></span>
             <span class="list-item-action copy" data-index="1" title="复制"><img class="svg-icon" src="../svg/fuzhi.svg"><span class="icon-text hidden">复制</span></span>
           </div>
-        </li>
+        </li> -->
       </ul>
       <div class="empyt-container">
         <img src="../svg/empty.svg" class="svg-icon-empty">
@@ -38,7 +45,7 @@
       </div>
     </div>
     <div class="action-input">
-      <textarea name="wenan" id="inputText" rows="3"></textarea>
+      <textarea name="wenan" placeholder="Command+Enter/Ctrl+Enter可快速新增/编辑" id="inputText" rows="3"></textarea>
       <span class="action-container__action add" id="submitText"><img class="svg-icon"
           src="../svg/tianjiabiaoqian.svg"><span class="icon-text submitTextName">新增</span></span>
     </div>

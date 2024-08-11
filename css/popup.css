@@ -22,6 +22,24 @@
   color: #333;
   font-weight: 500;
   padding: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+.title:hover .svg-icon-wechat{
+  display: block;
+}
+.title-left{
+  display: flex;
+  align-items: center;
+}
+.svg-icon-wechat{
+  display: none;
+  width: 200px;
+  padding: 19px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
 }
 .title span {
   margin-left: 15px;

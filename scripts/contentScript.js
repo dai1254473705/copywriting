@@ -47,10 +47,14 @@ document.addEventListener('selectionchange', (e) => {
             popBtn.style.zIndex = 10000;
             document.body.appendChild(popBtn);
             // 可以在这里添加按钮的点击事件处理等逻辑
-            popBtn.onclick = (e) => {
+            popBtn.onclick = async (e) => {
                 e.stopPropagation();
-                addToStore(text);
-                updateBadge();
+                try {
+                    await addToStore(text);
+                    await updateBadge();
+                } catch (error) {
+                }
+
                 document.body.removeChild(popBtn);
                 popBtn = null;
             }
